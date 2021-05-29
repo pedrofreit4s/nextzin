@@ -1,0 +1,113 @@
+.profile {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profileUserArea {
+  width: 85%;
+  max-width: 560px;
+  h5 {
+    color: #7d7c85;
+    font: {
+      weight: 600;
+      size: 18px;
+    }
+  }
+}
+.rowUserArea {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+}
+.userAreaProfile {
+  width: 62px;
+  height: 62px;
+  background: #6247da;
+  border-radius: 62px;
+  margin-right: 18px;
+}
+.userAreaInfos {
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #b2b1b8;
+  }
+  p {
+    color: #b2b1b8;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    i {
+      color: #febf32;
+      font-size: 19px;
+      margin-right: 7px;
+    }
+  }
+}
+.profileInfosArea {
+  width: 85%;
+  max-width: 560px;
+  margin-top: 34px;
+  h5 {
+    color: #7d7c85;
+    margin-bottom: 14px;
+    font: {
+      weight: 600;
+      size: 18px;
+    }
+  }
+}
+.infosAreaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2px 15px;
+  color: #706f778c;
+  font-family: 300;
+  @media (max-width: 322px) {
+    padding: 12px 15px;
+  }
+}
+.buttons {
+  margin-top: 45px;
+  width: 85%;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .btnCancel {
+    background: #232532;
+    color: #febf32;
+    width: 48.5%;
+    height: 59px;
+    cursor: pointer;
+    border-radius: 14px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.3s;
+    &:hover {
+      transition: all 0.3s;
+      background: #303242;
+    }
+  }
+  button {
+    width: 59px;
+    height: 59px;
+    border-radius: 59px;
+    background: #dab928;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    i {
+      font-size: 34px;
+      margin-top: 3px;
+      color: #232532;
+    }
+  }
+}

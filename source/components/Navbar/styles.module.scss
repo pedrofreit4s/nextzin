@@ -1,0 +1,27 @@
+.navbar {
+  height: auto;
+  padding: 15px 0px;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .active {
+    color: #4f4db5;
+    font-weight: 600;
+  }
+  li {
+    padding: 11px 15px;
+    margin: 0 5px;
+    list-style: none;
+    cursor: pointer;
+    font-family: 'Source Sans Pro';
+    font-size: 17.5px;
+    color: #929292;
+    font-weight: 600;
+    &:hover {
+      color: #4f4db5;
+    }
+  }
+}

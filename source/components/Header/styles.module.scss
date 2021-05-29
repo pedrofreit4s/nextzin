@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  height: auto;
+  background: #f2f2f2;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 52px 0px;
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+.heart {
+  font-size: 16px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  i {
+    color: #e26363;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+.search {
+  width: 50%;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
+  input {
+    background: #ffffff;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    height: 55px;
+    width: 100%;
+    padding: 0 22px;
+  }
+  @media (max-width: 550px) {
+    margin: 25px 0px;
+  }
+}
+.account {
+  font-size: 16px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  i {
+    color: #4f4db5;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}

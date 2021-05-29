@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+.apresentation {
+  width: 100%;
+  margin-top: 88px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.texts {
+  width: 50%;
+  @media (max-width: 505px) {
+    width: 100%;
+  }
+  h5 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #686868;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 131.5%;
+    color: #191919;
+    width: 100%;
+    max-width: 591px;
+    @media (max-width: 505px) {
+      width: 100%;
+    }
+  }
+}
+.vector {
+  @media (max-width: 505px) {
+    display: none;
+  }
+}
+.portfolio {
+  margin-top: 30px;
+}
+.categories {
+  @media (max-width: 505px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  button {
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 1.5px solid #0765e3;
+    outline: 0;
+    margin: 0 6px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    color: #4385ea;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      transition: all 0.3s;
+      background: #0765e3;
+      color: #fff;
+    }
+  }
+  .categoryActive {
+    background: #0765e3;
+    color: #fff;
+  }
+}
+.portfolioCarsRow {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 55px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 32%;
+  height: 300px;
+  background: #fff;
+  border-radius: 12px;
+  filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  @media (max-width: 505px) {
+    width: 100%;
+  }
+  img {
+    position: absolute;
+    width: 100%;
+  }
+  div {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 999;
+    transition: all 0.6s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    h3 {
+      display: none;
+      transition: all 0.6s;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Montserrat';
+    }
+    p {
+      transition: all 0.6s;
+      display: none;
+      margin-top: 4px;
+      color: #f1f1f1;
+    }
+    &:hover {
+      transition: all 0.6s;
+      background: rgba(0, 58, 134, 0.78);
+      p,
+      h3 {
+        display: block;
+        transition: all 0.6s;
+      }
+    }
+  }
+}
